@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shine Solar PWA</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="all">
+    <link rel="manifest" href="../manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- <script src="/app.js"></script> -->
+  </head>
+  <body class="padding">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyApObND-sFuG9yd8qMpHQ4b5t7C79Mtpv0",
+        authDomain: "pwatestapp-7a0db.firebaseapp.com",
+        databaseURL: "https://pwatestapp-7a0db.firebaseio.com",
+        projectId: "pwatestapp-7a0db",
+        storageBucket: "",
+        messagingSenderId: "950254808087",
+        appId: "1:950254808087:web:2e756281be09696d"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script> -->
+
+
+
+    <div class="top-header">
+        <a href="/dashboard/" title="Settings">
+            <img class="hamburger" src="/icons/closed-hamburger.svg">
+        </a>
+        <h1 class="title">Solar Status</h1>
+        <a href="/login/" title="Profile">
+            <img class="header-img" src="/icons/profile.jpg">
+        </a>
+    </div>
+    <div class='main padding'>
+        <div class="modal">
+            <img class="profile-img" src="/icons/profile.jpg">
+            <div class="head-profile">
+                <span class="greeting">Hello, Marcus Rhodes</span>
+                <span class="date">Thursday, August 15</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='greeting message'>You have another qualified refferal</div>
+
+    <div class="modal referrals blue top-padding">
+        <h4>Referrals</h4>
+        <p>4 Pending Referrals</p>
+        <div class="mini-container">
+            <div class="widget mini text-left">
+                <h5>Total Earnings</h5>
+                <span class="earnings">$1.270</span>
+                <p>4 Sold Referrals</p>
+            </div>
+            <div class="widget mini fade text-left left-padding">
+                <h5>Next Payout</h5>
+                <span class="payout">$390</span>
+                <p>August 5th, 2019</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal dual">
+        <div class="widget orange">
+            <h4 >New Referral</h4>
+            <spam class="circle" onclick="">
+                <img class="app" src="/icons/plus-sans.svg">
+            </spam>
+        </div>
+        <div class="widget grey">
+            <h4>Solar Status</h4>
+            <div class="percent-container mini fade">
+                <span class="stage-percent">45%</span>
+                <p>Percent Complete</p>               
+            </div>
+            </br>
+            <h5>Finance Verification</h5>
+            <p class="finance-step-mini">Step 4/9</p>
+        </div>
+    </div>
+
+    <div class="modal white-grey referrals modal-header top-padding butt">
+        <h3>Monitoring</h3>
+        <div class="mini-container">
+            <div class="widget mini fader" onclick="">
+                <img class="app-icon" src="/icons/enphase.png">
+            </div>
+            <div class="widget mini fader" onclick="">
+                <img class="app-icon" src="/icons/solaredge.png">
+            </div>
+        </div>
+    </div>
+
+    <nav class="toolbar">
+        <a href="/dashboard/" title="Dashboard">
+            <img src="/icons/dashboard-icon-copy.png">
+            <span>Home</span>
+        </a>
+
+        <a href="/status/" title="Status">
+            <img src="/icons/status-icon-copy.png">
+            <span>Status</span>
+        </a>
+    
+        <a href="/referrals/" title="Referrals">
+            <img src="/icons/refferal-icon-copy-3.png">
+            <span>Referrals</span>
+        </a>
+    
+        <!-- <a href="/settings/" title="More">
+            <img src="/icons/settings_icon.svg">
+            <span>Settings</span>
+        </a> -->
+    </nav>
+    
+  </body>
+</html>

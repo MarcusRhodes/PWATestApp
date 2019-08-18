@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shine Solar PWA</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="all">
+    <link rel="manifest" href="../manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- <script src="/app.js"></script> -->
+  </head>
+  <body class="padding">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyApObND-sFuG9yd8qMpHQ4b5t7C79Mtpv0",
+        authDomain: "pwatestapp-7a0db.firebaseapp.com",
+        databaseURL: "https://pwatestapp-7a0db.firebaseio.com",
+        projectId: "pwatestapp-7a0db",
+        storageBucket: "",
+        messagingSenderId: "950254808087",
+        appId: "1:950254808087:web:2e756281be09696d"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script> -->
+
+
+
+    <div class="top-header">
+        <a href="/dashboard/" title="Settings">
+            <img class="hamburger" src="/icons/closed-hamburger.svg">
+        </a>
+        <h1 class="title">Solar Status</h1>
+        <a href="/login/" title="Profile">
+            <img class="header-img" src="/icons/profile.jpg">
+        </a>
+    </div>
+
+    <div class="modal referrals grey padding auto-height">
+        <div class="modal mini fade padding auto-height">
+            <h5>Percent Complete</h5>
+            <span class="stage-percent">45%</span>
+        </div>
+        <div class="modal mini padding">
+            <span>Current Step</span>
+            <span class="stage">
+              <h5>Finance Verification</h5>
+              <p class="finance-step-mini">Step <span class="finance-step">4</span> of 9</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="current_status">Current Status</div>
+
+    <label>
+      <p>Step <span class="finance-step">4</span> of 9 - In Progress</p>
+      <ul class="breadcrumb">
+        <li class="past"></li>
+        <li class="past"></li>
+        <li class="past"></li>
+        <li class="current selected"></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+      </ul>
+    </label>
+
+    <div class="finance">
+      <h3 class="finance-icon">Finance Verification</h3>
+      <p class="finance-body">It’s like Pre Qualification. We need to know you are going to be good for your money. If you don’t qualify, don’t worry, we will offer advice on how to improve your credit!</p>
+    </div>
+
+
+    <div class="current_status">Questions</div>
+
+    <div class="email">
+      <p>Call or email us if you have any questions about your solar installation process.</p>
+      <div class="button-container">
+        <button class="email-button orange">Call</button>
+        <button class="email-button blue">Email</button>
+      </div>
+    </div>
+
+    <div class="current_status">Solar Status Timeline</div>
+
+    <div class="timeline butt">
+      <table>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            
+            <td><img class="app" src="/icons/group-copy-14@3x.png"></td>
+            <td>
+              <h4>Energy Evaluation</h4>
+              <p>Status - Completed</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-15@3x.png"></td>
+            <td>
+              <h4>Survey</h4>
+              <p>Status - Completed</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-16@3x.png"></td>
+            <td>
+              <h4>Design & Engineering</h4>
+              <p>Status - Completed</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-17@3x.png"></td>
+            <td>
+              <h4>Finance Verification</h4>
+              <p>Status - In Progress</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-18@3x.png"></td>
+            <td>
+              <h4>Permitting</h4>
+              <p>Status - Not Started</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-19@3x.png"></td>
+            <td>
+              <h4>Scheduling Installation</h4>
+              <p>Status - Not Started</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-20@3x.png"></td>
+            <td>
+              <h4>Installation</h4>
+              <p>Status - Not Started</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-21@3x.png"></td>
+            <td>
+              <h4>Inspection</h4>
+              <p>Status - Not Started</p>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <p class="timeline-row-date">May, 03 2019</p>
+            </th>
+          </tr>
+          <tr class="timeline-row">
+            <td><img class="app" src="/icons/group-copy-22@3x.png"></td>
+            <td>
+              <h4>Interconnection</h4>
+              <p>Status - Not Started</p>
+            </td>
+          </tr>
+      </table>
+    </div>
+
+    <button class="add-referral orange circle"></button>
+
+
+    <nav class="toolbar">
+        <a href="/dashboard/" title="Dashboard">
+            <img src="/icons/gauge-dashboard-1.svg">
+            <span>Home</span>
+        </a>
+
+        <a href="/status/" title="Status">
+            <img src="/icons/calendar-check-1-copy.svg">
+            <span>Status</span>
+        </a>
+    
+        <a href="/referrals/" title="Referrals">
+            <img src="/icons/refferal-icon-copy-3.png">
+            <span>Referrals</span>
+        </a>
+    
+        <!-- <a href="/settings/" title="More">
+            <img src="/icons/settings_icon.svg">
+            <span>Settings</span>
+        </a> -->
+    </nav>
+    </nav>
+    
+  </body>
+</html>
+

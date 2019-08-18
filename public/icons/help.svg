@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="26" cy="26" r="26" fill="#FFF"/>
+        <g transform="translate(18 18)">
+            <text fill="#FF6900" font-family="Rubik-Medium, Rubik" font-size="10" font-weight="400" letter-spacing="-.08">
+                <tspan x="5.073" y="11">?</tspan>
+            </text>
+            <circle cx="7.5" cy="7.5" r="7.5" stroke="#FF6900"/>
+        </g>
+    </g>
+</svg>
