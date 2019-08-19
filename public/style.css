@@ -439,8 +439,7 @@ tbody {
 
 tbody tr:last-of-type td div.divider {display: none;}
 
-
-
+/* This will be on many screens */
 .referral-button {
     position: fixed;
     bottom: 72px;
@@ -452,6 +451,62 @@ tbody tr:last-of-type td div.divider {display: none;}
     box-shadow: 0 1px 10px 0 rgba(48, 61, 70, 0.2);
     background-color: #ff6900 !important;
     padding: 15px;
+}
+
+/* Style the tab */
+.tab {
+    margin-top: 20px;
+    font-family: Rubik;
+    font-size: 14px;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+  
+/* Style the buttons inside the tab */
+.tab button {
+    position: relative;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    /* transition: 0.3s; */
+    color: #b1bbc2;
+    border-bottom: 3px none #ffffff00;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #facb34;
+    border-bottom: 3px solid #facb34;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tooltiptext {
+    width: 18px;
+    height: 18px;
+    color: #b1bbc2;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+    top: 0px;
+    border: solid 1px #b1bbc2;
+    right: -3px;
+
+}
+.tab button:hover .tooltiptext {
+    color: #facb34;
+    border: solid 1px #facb34;
 }
 
 
@@ -472,7 +527,7 @@ tbody tr:last-of-type td div.divider {display: none;}
     justify-content: space-around;
     display: flex;
     flex-flow: column;
-  }
+}
 
 .toolbar span {
     text-decoration: none;
@@ -486,8 +541,9 @@ tbody tr:last-of-type td div.divider {display: none;}
     cursor: pointer;
     /* width: 25%; */
     width: 33.33%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-a:focus { outline: 0; }
+/* a:focus { -webkit-tap-highlight-color: rgba(0,0,0,0); } */
 
 
 nav.toolbar {
