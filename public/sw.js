@@ -6,7 +6,9 @@ var filesToCache = [
   '/referrals/index.html',
   '/status/index.html',
   '/settings/index.html',
-  '/style.css'
+  '/style.css',
+  '/scripts/referral.js',
+  '/icons/'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');

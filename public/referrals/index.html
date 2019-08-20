@@ -15,22 +15,6 @@
   <body class="padding">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyApObND-sFuG9yd8qMpHQ4b5t7C79Mtpv0",
-        authDomain: "pwatestapp-7a0db.firebaseapp.com",
-        databaseURL: "https://pwatestapp-7a0db.firebaseio.com",
-        projectId: "pwatestapp-7a0db",
-        storageBucket: "",
-        messagingSenderId: "950254808087",
-        appId: "1:950254808087:web:2e756281be09696d"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-
     
     <div class="top-header">
         <a href="/dashboard/" title="Dashboard">
@@ -46,7 +30,7 @@
     <div class='main padding'>
         <div class="modal">
             <img class="profile-img" src="/icons/profile.jpg">
-            <div class="head-profile">
+            <div class="head-profile text-left left-padding">
                 <span class="greeting">Hello, Marcus Rhodes</span>
                 <span class="date">Thursday, August 15</span>
             </div>
@@ -87,12 +71,221 @@
     </div>
 
     <div class="tab">
-        <button class="tablinks" onclick="">Pending<span class="tooltiptext">4</span></button>
-        <button class="tablinks" onclick="">Qualified<span class="tooltiptext">3</span></button>
-        <button class="tablinks" onclick="">Sold<span class="tooltiptext">4</span></button>
-        <button class="tablinks" onclick="">Declined<span class="tooltiptext">2</span></button>
+        <button class=" pending" autofocus>Pending<span autofocus class="tooltiptext">4</span></button>
+        <button class=" qualified" >Qualified<span class="tooltiptext">3</span></button>
+        <button class=" sold" >Sold<span class="tooltiptext">4</span></button>
+        <button class=" declined" >Declined<span class="tooltiptext">2</span></button>
     </div>
 
+    
+    <div class="referral butt">
+        <!-- PENDING REFERRALS -->
+        <div class="referrals-pending">
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-pending">
+                    <h3 class="referral-name">Marcus Rhodes</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-pending">
+                    <h3 class="referral-name">Nic Moseley</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-pending">
+                    <h3 class="referral-name">John Dennyings</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-pending">
+                    <h3 class="referral-name">David Priebe</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUALIFIED REFERRALS -->
+        <div class="referrals-qualified butt">
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-qualified">
+                    <h3 class="referral-name">Marcus Rhodes</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-qualified">
+                    <h3 class="referral-name">Nic Moseley</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-qualified">
+                    <h3 class="referral-name">John Dennyings</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOLD REFERRALS -->
+        <div class="referrals-sold butt">
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-sold">
+                    <h3 class="referral-name">Marcus Rhodes</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-sold">
+                    <h3 class="referral-name">Nic Moseley</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-sold">
+                    <h3 class="referral-name">John Dennyings</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-sold">
+                    <h3 class="referral-name">John Dennyings</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DECLINED REFERRALS -->
+        <div class="referrals-declined butt">
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-declined">
+                    <h3 class="referral-name">John Dennyings</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="referral-modal text-left">
+                <div class="referral-inner border-declined">
+                    <h3 class="referral-name">John Dennyings</h3>
+                    <h5 class="referral-location">Bentonville, AR</h5>
+                    <div class="referral-data">
+                        <p>Referral Earnings</p>
+                        <span class="referral-earnings">$0</span>
+                        <p>Referral Status</p>
+                        <span class="referral-status">Pending</span>
+                        <p>Submission Date</p>
+                        <span class="referral-date">March 3rd, 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -111,7 +304,7 @@
         </a>
 
         <a href="/status/" title="Status">
-            <img src="/icons/status-icon-copy.png">
+            <img src="/icons/status-icon-copy.svg">
             <span>Status</span>
         </a>
     
@@ -121,6 +314,7 @@
         </a>
     </nav>
     
+    <script src="../scripts/referral.js"></script>
   </body>
 </html>
 

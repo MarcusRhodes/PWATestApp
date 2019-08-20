@@ -134,6 +134,20 @@ input {
     height: 60px;
     border: solid 1px #ff6900;
     border-radius: 50%;
+    background-color: #fff;
+    padding: 2px;
+}
+.profile-img:before {
+    background: none;
+    border: 4px solid #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    pointer-events: none;
 }
 
 .modal {
@@ -143,6 +157,7 @@ input {
 }
 .dual {display: flex;}
 .greeting {
+    min-width: 194px;
     /* width: 194px; */
     width: 100%;
     height: 25px;
@@ -165,18 +180,18 @@ input {
 }
 
 .referrals {
-    min-height: 140px;
+    height: 170px;
     border-radius: 6px;
     box-shadow: -1px 1px 3px 0 rgba(74, 74, 74, 0.29);
     margin: 5px 5px 5px 5px;
     display: flex;
-    flex-flow: column;
+    flex-flow: wrap;
     justify-content: space-around;
 }
 .orange {background-color:#ff6900;}
 .grey {background-color:#768a99;}
 .blue {background-color: #303d46;}
-.white-grey {background-color: #d3d8dc;height:170px; display: flex;}
+.white-grey {background-color: #d3d8dc;display: flex;}
 .white-grey h3 {
     /* width: 115px; */
     width: 100%;
@@ -191,7 +206,7 @@ input {
     width: 93%;
     display: -webkit-box;
     justify-content: space-around;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 
@@ -224,8 +239,9 @@ input {
 .mini-container {
     display: flex;
     flex-flow: nowrap;
-    /* width: 100%; */
+    width: 100%;
     padding: 0 10px 0 10px;
+    color: white;
 }
 .fade {background: rgba(255, 255, 255, 0.08); }
 .fader {background-color: rgba(255, 255, 255, 0.3); display: flex; flex-flow: row;}
@@ -474,13 +490,15 @@ tbody tr:last-of-type td div.divider {display: none;}
 
 /* Style the tab */
 .tab {
-    margin-top: 20px;
     font-family: Rubik;
     font-size: 14px;
     justify-content: space-around;
     display: flex;
     width: 100%;
     overflow: hidden;
+    margin-top: 0px;
+    border-top-width: 20px;
+    padding-top: 20px;
 }
   
 /* Style the buttons inside the tab */
@@ -491,43 +509,126 @@ tbody tr:last-of-type td div.divider {display: none;}
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    /* transition: 0.3s; */
+    padding: 14px 16px 14px 4px;
     color: #b1bbc2;
-    border-bottom: 3px none #ffffff00;
+    border-bottom: 3px solid #ffffff00;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 14px;
 }
   
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab button.pending:focus {
     color: #facb34;
     border-bottom: 3px solid #facb34;
+}.tab button.qualified:focus {
+    color: #2485e1;
+    border-bottom: 3px solid #2485e1;
 }
-  
-/* Create an active/current tablink class */
-.tab button.hover {
+.tab button.sold:focus {
+    color: #3dca59;
+    border-bottom: 3px solid #3dca59;
+}.tab button.declined:focus {
+    color: #768a99;
+    border-bottom: 3px solid #768a99;
+}
+
+.tab button.focus {
     background-color: #ccc;
 }
 
 .tooltiptext {
-    width: 18px;
-    height: 16px;
+    width: 20px;
+    height: 18px;
     color: #b1bbc2;
     text-align: center;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
     visibility: visible;
-    top: 0px;
+    top: -8px;
     border: solid 1px #b1bbc2;
-    right: -3px;
+    right: 1px;
+    font-size: 14px;
     padding-top: 2px;
-
 }
-.tab button:hover .tooltiptext {
+.tab button.pending:focus .tooltiptext {
     color: #facb34;
     border: solid 1px #facb34;
 }
+.tab button.qualified:focus .tooltiptext {
+    color: #2485e1;
+    border: solid 1px #2485e1;
+}
+.tab button.sold:focus .tooltiptext {
+    color: #3dca59;
+    border: solid 1px #3dca59;
+}
+.tab button.declined:focus .tooltiptext {
+    color: #768a99;
+    border: solid 1px #768a99;
+}
+
+.referral-modal {
+    /* margin-top: 15px; */
+    margin: 15px 5px;
+    width: calc(100% - 30px);
+    height: 125px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+    background-color: #eceeef;
+    padding: 5px 5px 13px 15px;
+    color: #303d46;
+}
+.referral-inner {
+    height: 112px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    padding: 8px 0 12px;
+}
+.border-pending {border-right: solid  5px #facb34;}
+.border-qualified {border-right: solid 5px #2485e1;}
+.border-sold {border-right: solid 5px #3dca59;}
+.border-declined {border-right: solid 5px #768a99;}
+.referral-inner h3, .referral-inner h5 {width: 100%;height: 18px;margin: 0 0 5px 0;}
+.referral-inner h5 {font-weight:100;}
+.referral-data {
+    display: flex;
+    flex-flow: wrap;
+}
+.referral-data p, .referral-data span{width: 50%;min-height: 18px;}
+.referral-data p {
+    font-size: 12px;
+    color: #768a99;
+    padding-top: 8px;
+    max-height: 10px;
+}
+.referral-data span{
+    height: 24px;
+    padding-top: 4px;
+}
+.referral-earnings {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 4px;
+    padding-top: 0 !important;
+}
+
+.referral {position: relative;top: 0px;height: auto;}
+.referrals-pending {position:absolute;right: 0%; top:0px;transition: right 500ms;}
+.referrals-qualified {position:absolute; right: 110%; top:0px;transition: right 500ms;}
+.referrals-sold {position:absolute; right: 110%; top:0px;transition: right 500ms;}
+.referrals-declined {position:absolute; right: 110%; top:0px;transition: right 500ms;}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -581,8 +682,6 @@ color: #425563; */
     width: 33.33%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-/* a:focus { -webkit-tap-highlight-color: rgba(0,0,0,0); } */
-
 
 nav.toolbar {
     padding-top: 6px;
