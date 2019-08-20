@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Shine Solar PWA</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="all">
+    <link rel="manifest" href="../manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- <script src="/app.js"></script> -->
+  </head>
+  <body class="padding">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyApObND-sFuG9yd8qMpHQ4b5t7C79Mtpv0",
+        authDomain: "pwatestapp-7a0db.firebaseapp.com",
+        databaseURL: "https://pwatestapp-7a0db.firebaseio.com",
+        projectId: "pwatestapp-7a0db",
+        storageBucket: "",
+        messagingSenderId: "950254808087",
+        appId: "1:950254808087:web:2e756281be09696d"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div class="top-header">
+        <a href="window.history.back()" title="Settings">
+            <img class="left-arrow" src="/icons/down-chevron.svg">
+        </a>
+        <h1 class="title">New Referral</h1>
+        <a href="/login/" title="Help">
+            <img class="help-img" src="/icons/help.svg">
+        </a>
+    </div>
+
+    
+
+    <!-- <div class="modal dual">
+        <div class="widget blue">
+            <h4 class="earnings-header">Total Earnings</h4>
+            <spam class="earnings">$1,270</spam>
+            <p class="sold-referrals">4 Sold referrals</p>
+        </div>
+        <div class="widget blue">
+            <h4 class="payout-header">Next Payout</h4>
+            <div class="mini">
+                <span class="payout">$390</span>
+                <p class="date">August 24th, 2019</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div style="padding-left:0;" class="mini-container padding">
+        <div style="border-radius: 6px;" class="widget mini text-left left-padding blue">
+            <h5>Total Earnings</h5>
+            <span class="earnings">$1.270</span>
+            <p>4 Sold Referrals</p>
+        </div>
+        <div style="border-radius: 6px;" class="widget mini text-left left-padding blue">
+            <h5>Next Payout</h5>
+            <div style="margin: 14px 0 0 0;width:131px" class="fade">
+                <span class="payout">$390</span>
+                <p>August 5th, 2019</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="">Pending<span class="tooltiptext">4</span></button>
+        <button class="tablinks" onclick="">Qualified<span class="tooltiptext">3</span></button>
+        <button class="tablinks" onclick="">Sold<span class="tooltiptext">4</span></button>
+        <button class="tablinks" onclick="">Declined<span class="tooltiptext">2</span></button>
+    </div>
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

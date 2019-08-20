@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Shine Solar PWA</title>
     <link rel="stylesheet" type="text/css" href="../style.css" media="all">
     <link rel="manifest" href="../manifest.json">
@@ -44,11 +44,11 @@
 
 
     <div class="top-header">
-        <a href="/dashboard/" title="Settings">
+        <a href="/dashboard/" title="Dashboard">
             <img class="hamburger" src="/icons/closed-hamburger.svg">
         </a>
         <h1 class="title">Solar Status</h1>
-        <a href="/login/" title="Profile">
+        <a href="/login/" title="Login">
             <img class="header-img" src="/icons/profile.jpg">
         </a>
     </div>
@@ -82,8 +82,8 @@
     <div class="modal dual">
         <div class="widget orange smaller-padding text-left">
             <h4 >New Referral</h4>
-            <span class="circle" onclick="">
-                <img class="app" src="/icons/plus-sans.svg">
+            <span class="circle" onclick="window.open('/make_referral/', '_self')">
+                <img class="step-icon" src="/icons/plus-sans.svg">
             </span>
         </div>
         <div class="widget grey smaller-padding text-left">
@@ -124,11 +124,6 @@
             <img src="/icons/refferal-icon-copy-3.png">
             <span>Referrals</span>
         </a>
-    
-        <!-- <a href="/settings/" title="More">
-            <img src="/icons/settings_icon.svg">
-            <span>Settings</span>
-        </a> -->
     </nav>
     
   </body>

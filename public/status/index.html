@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Shine Solar PWA</title>
     <link rel="stylesheet" type="text/css" href="../style.css" media="all">
     <link rel="manifest" href="../manifest.json">
@@ -45,22 +45,22 @@
 
 
     <div class="top-header">
-        <a href="/dashboard/" title="Settings">
+        <a href="/dashboard/" title="Dashboard">
             <img class="hamburger" src="/icons/closed-hamburger.svg">
         </a>
         <h1 class="title">Solar Status</h1>
-        <a href="/login/" title="Profile">
+        <a href="/login/" title="Login">
             <img class="header-img" src="/icons/profile.jpg">
         </a>
     </div>
 
-    <div class="modal referrals grey padding auto-height">
+    <div class="modal referrals grey padding auto-height" style="margin: 35px 20px 0 20px;flex-flow: initial;justify-content: space-between;">
         <div class="modal mini fade padding auto-height">
-            <h5>Percent Complete</h5>
+            <h4>Percent Complete</h4>
             <span class="stage-percent">45%</span>
         </div>
         <div class="modal mini padding text-left">
-            <h5>Current Step</h5>
+            <h4>Current Step</h4>
             <span class="stage" style="margin-top: 25px;">
               <h5>Finance Verification</h5>
               <p class="finance-step-mini">Step <span class="finance-step">4</span> of 9</p>
@@ -86,7 +86,7 @@
     </label>
 
     <div class="finance">
-      <h3 class="finance-icon">Finance Verification</h3>
+      <h3 class="finance-icon text-left">Finance Verification</h3>
       <p class="finance-body">It’s like Pre Qualification. We need to know you are going to be good for your money. If you don’t qualify, don’t worry, we will offer advice on how to improve your credit!</p>
     </div>
 
@@ -112,8 +112,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner past"></div><img class="app" src="/icons/group-copy-14@3x.png"></td>
-            <td>
+            <td><div class="divider past"></div><div class="inner past"></div><img class="step-icon" src="/icons/group-copy-14@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Energy Evaluation</h4>
               <p>Status - Completed</p>
               <div class="right-highlight past"></div>
@@ -127,8 +127,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner past"></div><img class="app" src="/icons/group-copy-15@3x.png"></td>
-            <td>
+            <td><div class="divider past"></div><div class="inner past"></div><img class="step-icon" src="/icons/group-copy-15@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Survey</h4>
               <p>Status - Completed</p>
               <div class="right-highlight past"></div>
@@ -141,8 +141,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner past"></div><img class="app" src="/icons/group-copy-16@3x.png"></td>
-            <td>
+            <td><div class="divider past"></div><div class="inner past"></div><img class="step-icon" src="/icons/group-copy-16@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Design & Engineering</h4>
               <p>Status - Completed</p>
               <div class="right-highlight past"></div>
@@ -155,8 +155,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner current"></div><img class="app" src="/icons/group-copy-17@3x.png"></td>
-            <td>
+            <td><div class="divider"></div><div class="inner-background"><div class="inner current"></div></div></div><img class="step-icon" src="/icons/group-copy-17@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Finance Verification</h4>
               <p>Status - In Progress</p>
               <div class="right-highlight current"></div>
@@ -169,8 +169,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner"></div><img class="app" src="/icons/group-copy-18@3x.png"></td>
-            <td>
+            <td><div class="divider"></div><div class="inner"></div><img class="step-icon" src="/icons/group-copy-18@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Permitting</h4>
               <p>Status - Not Started</p>
               <div class="right-highlight"></div>
@@ -183,8 +183,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner"></div><img class="app" src="/icons/group-copy-19@3x.png"></td>
-            <td>
+            <td><div class="divider"></div><div class="inner"></div><img class="step-icon" src="/icons/group-copy-19@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Scheduling Installation</h4>
               <p>Status - Not Started</p>
               <div class="right-highlight"></div>
@@ -197,8 +197,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner"></div><img class="app" src="/icons/group-copy-20@3x.png"></td>
-            <td>
+            <td><div class="divider"></div><div class="inner"></div><img class="step-icon" src="/icons/group-copy-20@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Installation</h4>
               <p>Status - Not Started</p>
               <div class="right-highlight"></div>
@@ -211,8 +211,8 @@
           </tr>
           <tr class="timeline-row">
             
-            <td><div class="divider"></div><div class="inner"></div><img class="app" src="/icons/group-copy-21@3x.png"></td>
-            <td>
+            <td><div class="divider"></div><div class="inner"></div><img class="step-icon" src="/icons/group-copy-21@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Inspection</h4>
               <p>Status - Not Started</p>
               <div class="right-highlight"></div>
@@ -225,8 +225,8 @@
           </tr>
           <tr class="timeline-row">
           
-            <td><div class="divider"></div><div class="inner"></div><img class="app" src="/icons/group-copy-22@3x.png"></td>
-            <td>
+            <td><div class="divider"></div><div class="inner"></div><img class="step-icon" src="/icons/group-copy-22@3x.png"></td>
+            <td class="text-left left-padding">
               <h4>Interconnection</h4>
               <p>Status - Not Started</p>
               <div class="right-highlight"></div>
@@ -235,7 +235,7 @@
       </table>
     </div>
 
-    <span class="circle referral-button" onclick="">
+    <span class="circle referral-button" onclick="window.open('/make_referral/', '_self')">
         <img class="app" src="/icons/plus-sans.svg">
     </span>
 
@@ -255,12 +255,6 @@
             <img src="/icons/refferal-icon-copy-3.png">
             <span>Referrals</span>
         </a>
-    
-        <!-- <a href="/settings/" title="More">
-            <img src="/icons/settings_icon.svg">
-            <span>Settings</span>
-        </a> -->
-    </nav>
     </nav>
     
   </body>

@@ -1,6 +1,5 @@
 body {
     background-color: #ffffff;
-    color: #425563;
     font-family: "Rubik","trebuchet ms",sans-serif;
     display: flex;
     flex-flow: column nowrap;
@@ -8,10 +7,17 @@ body {
     font-size: 16px;
     letter-spacing: -0.13px;
     text-align: center;
-    color: #d3d8dc;
+    color: #b1bbc2;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding-top: 0px;
-    /* padding: 0 10px 10px 10px; */
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Chrome */
 }
 .login-body {
     background-image: url(/icons/login-background.jpg);
@@ -33,8 +39,7 @@ body {
 .main {
     height: 100%;
     align-items: center;
-    /* flex-flow: column nowrap;
-    display: flex; */
+    margin-top: 35px;
 }
 .padding {padding: 10px 10px 10px 10px;}
 .left-padding {padding-left: 20px !important;}
@@ -97,19 +102,20 @@ input {
 
 .top-header {
     display: flex;
-    padding: 5px 5px 5px 5px;
-    position: sticky;
+    padding: 15px 25px 0px 25px;
+    position: fixed;
     top: 0;
-    width: 100%;
+    width: -webkit-fill-available;
     background-color: white;
     z-index: 2;
+    left: 0;
 }
 .title {
     width: 100%;
     height: 14px;
     font-family: Rubik;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -159,15 +165,12 @@ input {
 }
 
 .referrals {
-    /* width: 302px; */
-    /* width: 100%; */
-    /* height: 170px; */
     min-height: 140px;
     border-radius: 6px;
     box-shadow: -1px 1px 3px 0 rgba(74, 74, 74, 0.29);
     margin: 5px 5px 5px 5px;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
     justify-content: space-around;
 }
 .orange {background-color:#ff6900;}
@@ -188,6 +191,7 @@ input {
     width: 93%;
     display: -webkit-box;
     justify-content: space-around;
+    margin-left: 10px;
 }
 
 
@@ -205,30 +209,26 @@ input {
     display: grid;
     justify-content: center;
 }
-.app {height: 51px;color:white;}
+.app {height: 31px;color:white;}
+.step-icon {height: 51px;color: white;}
 .app-icon {height: 18px;width:100px;color:white; opacity: 1;margin-top: 15px;}
 .mini {
-    /* width: 50%; */
-    /* width: 47%;
-    height: 72px; */
-    /* max-width: 180px; */
     max-height: 50px;
     min-width: 80px;
     min-height: 50px;
     border-radius: 3px;
-    /* background-color: #ffffff; */    
-    /* width: 50%; */
     display: flex;
     flex-direction: column;
+    min-width: 130px;
 }
 .mini-container {
     display: flex;
     flex-flow: nowrap;
-    width: 100%;
+    /* width: 100%; */
     padding: 0 10px 0 10px;
 }
 .fade {background: rgba(255, 255, 255, 0.08); }
-.fader {background-color: rgba(255, 255, 255, 0.3); display: flow-root;}
+.fader {background-color: rgba(255, 255, 255, 0.3); display: flex; flex-flow: row;}
 .auto-height {height:auto;min-height: 70px;max-height: auto;}
 .top-padding {padding: 15px 0 0 0;}
 
@@ -259,7 +259,7 @@ input {
 }
 
 .breadcrumb{
-    /* width: 100%; */
+    border-radius: 3px;
     min-width: 92%;
     flex-wrap: nowrap;
     display: flex;
@@ -280,9 +280,8 @@ input {
 .breadcrumb .past {background:#768a99; }
 .breadcrumb .current {background: #ff6900;}
 .breadcrumb .selected {
-    outline-style: outset;
-    outline-offset: 2px;
-    border-radius: 1px;
+    outline-style: solid;
+    -webkit-box-shadow: 0 0 8px black;
 }
 label{
     font-size: 12px;
@@ -296,12 +295,19 @@ label{
     font-size: 16px;
     color: #ff6900;
     margin-bottom: 0px;
+    margin-left: 25px;
 }
 .finance p {
     font-size: 14px;
     color: #303d46;
     padding: 0 30px 0 30px;
     margin-top: 8px;
+}
+.finance-icon::before {
+    content: url('/icons/finance-icon.svg');
+    display: inline-block;
+    padding-right: 5px;
+
 }
 
 .email {
@@ -403,13 +409,14 @@ tbody {
     /* lines */
     height: 100px;
     padding-bottom: 10px;
-    width: 10px;
+    width: 1.5px;
     margin: 20px auto;
     float: left;
     position: absolute;
-    left: 28px;
-    border-left: solid 2px #97acbb;
+    left: 28.5px;
+    background-color: #d3d8dc;
 }
+.divider.past {background-color: #768a99 !important;}
 .inner {
     /* dota */
     width: 11px;
@@ -423,8 +430,20 @@ tbody {
     float: left;
     left: 24px;
 }
+.inner-background {
+    background-color: white;
+    left: 20px;
+    padding: 3px;
+    content: "•";
+    border: solid 1px #ff6900;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 20px auto;
+}
 .inner.past {background-color: #768a99;}
-.inner.current {background-color: #ff6900;}
+.inner.current {left: 3px;top: -17px;background-color: #ff6900;}
 
 .right-highlight {
     height: 54px;
@@ -434,7 +453,7 @@ tbody {
     top: 0px;
 }
 .right-highlight.past {border-left: solid 3px #768a99;}
-.right-highlight.current {border-left: solid 3px #ff6900;}
+.right-highlight.current {border-left: solid 3px #ff6900;right: 3px;}
 
 
 tbody tr:last-of-type td div.divider {display: none;}
@@ -446,8 +465,8 @@ tbody tr:last-of-type td div.divider {display: none;}
     background-color: rgba(255,255,255,0.8);
     display: flex;
     right: 18px;
-    width: 40px !important;
-    height: 40px !important;
+    width: 30px !important;
+    height: 30px !important;
     box-shadow: 0 1px 10px 0 rgba(48, 61, 70, 0.2);
     background-color: #ff6900 !important;
     padding: 15px;
@@ -486,13 +505,13 @@ tbody tr:last-of-type td div.divider {display: none;}
 }
   
 /* Create an active/current tablink class */
-.tab button.active {
+.tab button.hover {
     background-color: #ccc;
 }
 
 .tooltiptext {
     width: 18px;
-    height: 18px;
+    height: 16px;
     color: #b1bbc2;
     text-align: center;
     border-radius: 50%;
@@ -502,12 +521,31 @@ tbody tr:last-of-type td div.divider {display: none;}
     top: 0px;
     border: solid 1px #b1bbc2;
     right: -3px;
+    padding-top: 2px;
 
 }
 .tab button:hover .tooltiptext {
     color: #facb34;
     border: solid 1px #facb34;
 }
+
+
+
+/* Make referral screen */
+.left-arrow {
+    width: 11px;
+    height: 5px;
+    transform: rotate(-270deg);
+    border: solid 1.5px #555555;
+}
+/* margin-left: 75%;
+content: "";
+background-image: url(/assets/down-chevron.svg);
+background-repeat: no-repeat;
+background-size: initial;
+background-position-y: center;
+width: 14px;
+color: #425563; */
 
 
 
@@ -553,7 +591,7 @@ nav.toolbar {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgb(255, 255, 255);
     border-top: solid 1px #e0e3e5;
     display: flex;
     flex-flow: row nowrap;
