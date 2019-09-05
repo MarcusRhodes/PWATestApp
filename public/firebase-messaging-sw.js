@@ -2,12 +2,12 @@ importScripts('https://www.gstatic.com/firebasejs/4.4.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/4.4.0/firebase-messaging.js');
 
 var config = {
-    apiKey: "AIzaSyApObND-sFuG9yd8qMpHQ4b5t7C79Mtpv0",
+    apiKey: "",
     authDomain: "pwatestapp-7a0db.firebaseapp.com",
     databaseURL: "https://pwatestapp-7a0db.firebaseio.com",
     projectId: "pwatestapp-7a0db",
     storageBucket: "",
-    messagingSenderId: "950254808087"
+    messagingSenderId: ""
 };
 firebase.initializeApp(config);
 const messaging = firebase.messaging();
